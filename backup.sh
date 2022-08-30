@@ -12,7 +12,7 @@ echo "NEAR node was stopped" | ts
 
 if [ -d "$BACKUPDIR" ]; then
     echo " Delete Old File " | ts
-        find BackupNear -type f -mtime 0.1 -exec rm -rf {} \;
+        find BackupNear -type f -mtime 1 -exec rm -rf {} \;
     echo " Delete Done " | ts
     echo "Backup started" | ts
     cp -rf  $DATADIR/data/  ${BACKUPDIR}/
