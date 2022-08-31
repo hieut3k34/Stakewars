@@ -22,7 +22,7 @@ if [ -d "$BACKUPDIR" ]; then
 
     # Submit backup completion status, you can use healthchecks.io, betteruptime.com or other services
     # Example
-    # curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/xXXXxXXx-XxXx-XXXX-XXXx-...
+     curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/adf6601b-22a3-4c47-aa4e-8341f536ad3f
 
     echo "Backup completed" | ts
 else
